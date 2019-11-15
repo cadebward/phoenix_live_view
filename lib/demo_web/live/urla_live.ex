@@ -8,6 +8,7 @@ defmodule DemoWeb.UrlALive do
     ~L"""
     <div>
       <button phx-click="redirect">live_redirect to next page</button>
+      <%= live_link("Live Link", to: Routes.live_path(@socket, UrlBLive, :param)) %>
     </div>
     """
   end
