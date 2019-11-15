@@ -41,6 +41,9 @@ defmodule DemoWeb.Router do
     live "/users/:id", UserLive.Show
     live "/users/:id/edit", UserLive.Edit
 
+    live "/urla/:param", UrlALive
+    live "/urlb/:param", UrlBLive
+
     resources "/plain/users", UserController
   end
 end
